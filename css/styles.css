@@ -1,0 +1,49 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h1 {
+  color: lightcoral;
+}
+.flexbox-container {
+  background-color: lightcoral;
+  min-height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.flexbox-item {
+  width: 200px;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  border: solid black;
+}
+.item-1 {
+  min-height: 100px;
+}
+.item-2 {
+  min-height: 200px;
+  flex-shrink: 0;
+}
+.item-3 {
+  min-height: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  flex: 1 0 0;
+}
